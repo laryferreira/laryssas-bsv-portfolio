@@ -26,13 +26,6 @@ texts = [
     ]
 subtitle = st.empty()
 
-# Carregar imagem usando caminho absoluto
-image_path = os.path.join(CURRENT_DIR, "assets", "profile.png")
-image = Image.open(image_path)
-col1, col2, col3 = st.columns([1, 2, 1])
-with col2:
-    st.image(image, use_container_width=True)
-
 st.markdown("""
     <div class="button-container">
         <a href="https://www.linkedin.com/in/laryssaoliferreira/" target="_blank" class="custom-button">LinkedIn</a>
@@ -40,13 +33,18 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
+# Carregar imagem usando caminho absoluto
+image_path = os.path.join(CURRENT_DIR, "assets", "profile.png")
+image = Image.open(image_path)
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    st.markdown("""
+        <div class="profile-image-container">
+    """, unsafe_allow_html=True)
+    st.image(image, use_container_width=True)
+
+
 for _ in range(1):
     for text in texts:
         subtitle.markdown(f"**{text}**")
         time.sleep(2)
-
-st.markdown("""
-    <div class="footer">
-        Made with ❤️ by Laryssa Ferreira | <a href="https://github.com/laryssaoliveira" target="_blank">GitHub</a>
-    </div>
-    """, unsafe_allow_html=True)

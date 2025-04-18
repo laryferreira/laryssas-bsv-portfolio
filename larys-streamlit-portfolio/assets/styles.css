@@ -31,6 +31,24 @@ a {
     text-decoration: none;
 }
 
+
+image {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    margin-top: -40px; /* Ajuste este valor para subir ou descer a imagem */
+    margin-bottom: 20px;
+}
+
+image:hover {
+    transform: scale(1.05);
+}
+
+image {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .stTextInput>div>input {
     border: 1px solid #e91e63;
     font-family: 'Quicksand', sans-serif;
@@ -58,27 +76,7 @@ a {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 20px;
-    margin-bottom: 60px;
+    margin-top: 10px; /* Reduzido para compensar a subida da imagem */
+    margin-bottom: 40px;
 }
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f46997;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 14px;
-    z-index: 999;
-}
-.footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-.footer a:hover {
-    text-decoration: underline;
-}
+
