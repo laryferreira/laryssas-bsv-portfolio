@@ -1,0 +1,93 @@
+{
+    "title": {
+      "text": {
+        "headline": "Get to know me!",
+        "text": "<p>Once I </p>"
+      },
+      "media": {
+        "url": "https://media.licdn.com/dms/image/v2/D4D2DAQEPcvMx6JNLQQ/profile-treasury-image-shrink_1280_1280/profile-treasury-image-shrink_1280_1280/0/1718713900553?e=1745550000&v=beta&t=njf95vxomlqz76L-_YE9NF3RmADOyrhZLbQa3ScYMe8",
+        "caption": "Foto ilustrativa",
+        "credit": "Fonte: Pessoal"
+      }
+    },
+    "events": [
+      {
+        "start_date": { "year": 2021 },
+        "text": {
+          "headline": "Início na Pesquisa com Grafeno",
+          "text": "<p>Durante a pandemia, fui selecionada para um programa de pesquisa da startup MAIS e estudei o uso do grafeno em supercapacitores.</p>"
+        },
+        "group": "Início"
+      },
+      {
+        "start_date": { "year": 2022 },
+        "text": {
+          "headline": "2º Lugar em Feira de Engenharia",
+          "text": "<p>Ganhei o segundo lugar em soluções de engenharia na feira da Universidade de Brasília.</p>"
+        },
+        "group": "Conquistas Acadêmicas"
+      },
+      {
+        "start_date": { "year": 2023 },
+        "text": {
+          "headline": "Primeira da Família na Universidade Pública",
+          "text": "<p>Entrei em Engenharia da Computação, sendo a primeira da minha família a estudar em uma universidade pública.</p>"
+        },
+        "group": "Vida Acadêmica"
+      },
+      {
+        "start_date": { "year": 2024 },
+        "text": {
+          "headline": "Início do Impacto Social",
+          "text": "<p>Passei a ensinar programação para meninas em situação de vulnerabilidade.</p>"
+        },
+        "group": "Impacto Social"
+      },
+      {
+        "start_date": { "year": 2025 },
+        "text": {
+          "headline": "Liderança Internacional - Huawei",
+          "text": "<p>Representei o Brasil em programa de liderança da Huawei e prototipei uma solução para integração linguística de crianças refugiadas.</p>"
+        },
+        "group": "Internacional"
+      },
+      {
+        "start_date": { "year": 2024 },
+        "text": {
+          "headline": "Maior Maratona Feminina de Programação da América Latina",
+          "text": "<p>Organizei uma competição com 1000 participantes de 5 países.</p>"
+        },
+        "group": "Impacto Social"
+      },
+      {
+        "start_date": { "year": 2024 },
+        "text": {
+          "headline": "Interna no BTG Pactual",
+          "text": "<p>Fui aceita como estagiária no maior banco de investimentos da América Latina.</p>"
+        },
+        "group": "Experiência Profissional"
+      },
+      {
+        "start_date": { "year": 2025 },
+        "text": {
+          "headline": "Preparação para Consultoria Estratégica",
+          "text": "<p>Estudo intensamente para assumir uma vaga de consultora no BCG.</p>"
+        },
+        "group": "Novos Desafios"
+      }
+    ],
+    "eras": [
+      {
+        "start_date": { "year": 2020 },
+        "end_date": { "year": 2022 },
+        "text": { "headline": "Início da Jornada" }
+      },
+      {
+        "start_date": { "year": 2023 },
+        "end_date": { "year": 2024 },
+        "text": { "headline": "Expansão e Impacto" }
+      }
+    ]
+    
+  }
+  
