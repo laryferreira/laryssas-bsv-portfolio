@@ -1,6 +1,10 @@
+import os
 import streamlit as st
 from PIL import Image
 import time
+
+# Obtém o diretório do arquivo atual
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 st.set_page_config(
     page_title="Laryssa Ferreira | Portfólio",
@@ -8,8 +12,10 @@ st.set_page_config(
     initial_sidebar_state="auto"
 )
 st.title("I'm Laryssa Ferreira")
-# Carregar CSS externo
-with open("assets/styles.css") as f:
+
+# Carregar CSS externo usando caminho absoluto
+css_path = os.path.join(CURRENT_DIR, "assets", "styles.css")
+with open(css_path) as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 texts = [
@@ -20,7 +26,9 @@ texts = [
     ]
 subtitle = st.empty()
 
-image = Image.open("assets/profile.png")
+# Carregar imagem usando caminho absoluto
+image_path = os.path.join(CURRENT_DIR, "assets", "profile.png")
+image = Image.open(image_path)
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     st.image(image, use_container_width=True)
