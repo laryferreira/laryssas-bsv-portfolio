@@ -58,10 +58,10 @@ with col2:
     st.markdown("""
         <div class="profile-image-container">
     """, unsafe_allow_html=True)
-    st.image(image, use_container_width=False, width=400)
+    st.image(image, use_container_width=False, width=800)
 
 
-for _ in range(1):
+for _ in range(24):
     for text in texts:
         subtitle.markdown(f"**{text}**")
         time.sleep(2)

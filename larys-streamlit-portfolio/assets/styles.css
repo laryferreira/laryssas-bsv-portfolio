@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
 
 html, body, [class*="css"]  {
+<<<<<<< HEAD
     font-family: 'Quicksand', sans-serif !important;
     background: linear-gradient(135deg, #ffffff, #ffe4ec) !important; 
+=======
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #ffffff, #ffe4ec) !important;
+>>>>>>> acff59196dbbe71cad2ea0b03a42253b34ce8240
 }
 
 h1, h2, h3 {
-    color: #e91e63;
+    color: #ff9cbd;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -33,7 +38,7 @@ a {
 
 .profile-image-container {
     position: relative;
-    margin-top: -100px;  /* Aumentando o valor negativo para subir mais a imagem */
+    margin-top: -100px;  
     margin-bottom: 20px;
     text-align: center;
 }
@@ -62,14 +67,14 @@ a {
     display: inline-block;
 }
 .custom-button:hover {
-    background-color: #e91e63;
+    background-color: #f4b7cb;
     transform: scale(1.05);
 }
 .button-container {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 10px; /* Reduzido para compensar a subida da imagem */
+    margin-top: 10px;
     margin-bottom: 40px;
 }
 
