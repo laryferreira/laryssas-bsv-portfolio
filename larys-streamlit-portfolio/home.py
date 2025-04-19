@@ -13,23 +13,56 @@ st.set_page_config(
 )
 st.title("I'm Laryssa Ferreira")
 
+# Cores personalizadas
 bg_color = "#ffffff"
-secondary_Background_Color = "#ffe4ec"
+secondary_bg_color = "#ffe4ec"
+text_color = "#AB4E68"
+primary_color = "#D282A6"
 
-st.markdown(
-    f"""
+# CSS para forçar o tema claro mesmo com base="dark"
+st.markdown(f"""
     <style>
-        html, body, [data-testid="stAppViewContainer"], .stApp {{
+        /* Fundo geral do app */
+        html, body, .stApp, [data-testid="stAppViewContainer"] {{
             background-color: {bg_color} !important;
-            background: {bg_color} !important;
-            secondary-background-color: {secondary_Background_Color} !important;
+            color: {text_color} !important;
+        }}
+
+        /* Corrige o fundo preto vindo do tema dark */
+        div[class^="st-emotion-cache"] {{
+            background-color: {bg_color} !important;
+            color: {text_color} !important;
+        }}
+
+        /* Sidebar, header e outros blocos */
+        [data-testid="stSidebar"] {{
+            background-color: {secondary_bg_color} !important;
+        }}
+
+        [data-testid="stHeader"] {{
+            background-color: {bg_color} !important;
+        }}
+
+        .block-container {{
+            background-color: {bg_color} !important;
+        }}
+
+        /* Botões padrão */
+        .stButton>button {{
+            background-color: {primary_color} !important;
+            color: white !important;
+            border: none !important;
+            border-radius: 8px !important;
+            padding: 0.5rem 1rem !important;
+        }}
+
+        /* Textos */
+        h1, h2, h3, h4, h5, h6, p, span, label {{
+            color: {text_color} !important;
         }}
     </style>
-    """,
-    unsafe_allow_html=True
-)
+""", unsafe_allow_html=True)
 
-        
 # Carregar CSS externo usando caminho absoluto
 css_path = os.path.join(CURRENT_DIR, "assets", "styles.css")
 with open(css_path) as f:
@@ -40,7 +73,7 @@ texts = [
     "creating inclusive tech spaces",
     "exploring AI through research",
     "building a better future through code"
-    ]
+]
 subtitle = st.empty()
 
 st.markdown("""
@@ -59,7 +92,6 @@ with col2:
         <div class="profile-image-container">
     """, unsafe_allow_html=True)
     st.image(image, use_container_width=False, width=800)
-
 
 for _ in range(24):
     for text in texts:
