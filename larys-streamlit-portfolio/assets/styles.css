@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
 
 html, body, [class*="css"]  {
-    font-family: 'Quicksand', sans-serif;
-    background: linear-gradient(135deg, #ffffff, #ffe4ec);
+    font-family: 'Quicksand', sans-serif !important;
+    background: linear-gradient(135deg, #ffffff, #ffe4ec) !important; 
 }
 
 h1, h2, h3 {

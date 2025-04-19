@@ -13,6 +13,23 @@ st.set_page_config(
 )
 st.title("I'm Laryssa Ferreira")
 
+bg_color = "#ffffff"
+secondary_Background_Color = "#ffe4ec"
+
+st.markdown(
+    f"""
+    <style>
+        html, body, [data-testid="stAppViewContainer"], .stApp {{
+            background-color: {bg_color} !important;
+            background: {bg_color} !important;
+            secondary-background-color: {secondary_Background_Color} !important;
+        }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+        
 # Carregar CSS externo usando caminho absoluto
 css_path = os.path.join(CURRENT_DIR, "assets", "styles.css")
 with open(css_path) as f:
