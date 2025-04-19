@@ -41,7 +41,7 @@ with col2:
     st.markdown("""
         <div class="profile-image-container">
     """, unsafe_allow_html=True)
-    st.image(image, use_container_width=True)
+    st.image(image, use_container_width=False, width=400)
 
 
 for _ in range(1):

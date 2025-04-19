@@ -2,7 +2,7 @@
 
 html, body, [class*="css"]  {
     font-family: 'Quicksand', sans-serif;
-    background: linear-gradient(135deg, #ffe5ec, #ffe4ec);
+    background: linear-gradient(135deg, #ffffff, #ffe4ec);
 }
 
 h1, h2, h3 {
@@ -31,29 +31,22 @@ a {
     text-decoration: none;
 }
 
-
-image {
+.profile-image-container {
     position: relative;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-    margin-top: -40px; /* Ajuste este valor para subir ou descer a imagem */
+    margin-top: -100px;  /* Aumentando o valor negativo para subir mais a imagem */
     margin-bottom: 20px;
+    text-align: center;
 }
 
-image:hover {
-    transform: scale(1.05);
-}
-
-image {
+.profile-image-container img {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-.stTextInput>div>input {
-    border: 1px solid #e91e63;
-    font-family: 'Quicksand', sans-serif;
+.profile-image-container img:hover {
+    transform: scale(1.05);
 }
-
 .custom-button {
     background-color: #f46997;
     color: white !important;
